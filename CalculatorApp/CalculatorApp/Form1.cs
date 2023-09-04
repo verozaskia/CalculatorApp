@@ -11,7 +11,7 @@ namespace CalculatorApp
             InitializeComponent();
         }
 
-        private void btn0_Click(object sender, EventArgs e)
+        private void Btn0_Click(object sender, EventArgs e)
         {
             if (textBox1.Text == "0")
             {
@@ -140,18 +140,6 @@ namespace CalculatorApp
             }
         }
 
-        private void PlusMinusBtn_Click(object sender, EventArgs e)
-        {
-            if (textBox1.Text.Contains("-"))
-            {
-                textBox1.Text = textBox1.Text.Trim('-');
-            }
-            else
-            {
-                textBox1.Text = '-' + textBox1.Text;
-            }
-        }
-
         private void MinusBtn_Click(object sender, EventArgs e)
         {
             valueFirst = decimal.Parse(textBox1.Text);
@@ -181,13 +169,6 @@ namespace CalculatorApp
             operators = "*";
         }
 
-        private void ModuleBtn_Click(object sender, EventArgs e)
-        {
-            valueFirst = decimal.Parse(textBox1.Text);
-            textBox1.Clear();
-            operators = "%";
-        }
-
         private void EqualBtn_Click(object sender, EventArgs e)
         {
             switch (operators)
@@ -212,11 +193,6 @@ namespace CalculatorApp
                     result = valueFirst * valueSecond;
                     textBox1.Text = result.ToString();
                     break;
-                case "%":
-                    valueSecond = decimal.Parse(textBox1.Text);
-                    result = valueFirst % valueSecond;
-                    textBox1.Text = result.ToString();
-                    break;
 
             }
         }
@@ -226,6 +202,15 @@ namespace CalculatorApp
             valueFirst = 0.0m;
             valueSecond = 0.0m;
             textBox1.Text = "0";
+        }
+
+        private void DelBtn_Click(object sender, EventArgs e)
+        {
+            if (textBox1.Text.Length > 0)
+            {
+                textBox1.Text = textBox1.Text.Substring(0, textBox1.Text.Length - 1);
+            }
+
         }
     }
 }

@@ -38,14 +38,13 @@
             btn9 = new Button();
             btn8 = new Button();
             btn7 = new Button();
-            EqualBtn = new Button();
             DotBtn = new Button();
-            btn0 = new Button();
-            ModuleBtn = new Button();
+            Btn0 = new Button();
+            DelBtn = new Button();
             MultiplyBtn = new Button();
             PlusBtn = new Button();
             ClearBtn = new Button();
-            PlusMinusBtn = new Button();
+            EqualBtn = new Button();
             DevideBtn = new Button();
             MinusBtn = new Button();
             SuspendLayout();
@@ -160,49 +159,38 @@
             btn7.UseVisualStyleBackColor = true;
             btn7.Click += btn7_Click;
             // 
-            // EqualBtn
-            // 
-            EqualBtn.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            EqualBtn.Location = new Point(151, 253);
-            EqualBtn.Name = "EqualBtn";
-            EqualBtn.Size = new Size(63, 55);
-            EqualBtn.TabIndex = 12;
-            EqualBtn.Text = "=";
-            EqualBtn.UseVisualStyleBackColor = true;
-            EqualBtn.Click += EqualBtn_Click;
-            // 
             // DotBtn
             // 
             DotBtn.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            DotBtn.Location = new Point(82, 253);
+            DotBtn.Location = new Point(151, 253);
             DotBtn.Name = "DotBtn";
             DotBtn.Size = new Size(63, 55);
-            DotBtn.TabIndex = 11;
+            DotBtn.TabIndex = 12;
             DotBtn.Text = ".";
             DotBtn.UseVisualStyleBackColor = true;
             DotBtn.Click += DotBtn_Click;
             // 
-            // btn0
+            // Btn0
             // 
-            btn0.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            btn0.Location = new Point(13, 253);
-            btn0.Name = "btn0";
-            btn0.Size = new Size(63, 55);
-            btn0.TabIndex = 10;
-            btn0.Text = "0";
-            btn0.UseVisualStyleBackColor = true;
-            btn0.Click += btn0_Click;
+            Btn0.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            Btn0.Location = new Point(82, 253);
+            Btn0.Name = "Btn0";
+            Btn0.Size = new Size(63, 55);
+            Btn0.TabIndex = 11;
+            Btn0.Text = "0";
+            Btn0.UseVisualStyleBackColor = true;
+            Btn0.Click += Btn0_Click;
             // 
-            // ModuleBtn
+            // DelBtn
             // 
-            ModuleBtn.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            ModuleBtn.Location = new Point(318, 253);
-            ModuleBtn.Name = "ModuleBtn";
-            ModuleBtn.Size = new Size(63, 55);
-            ModuleBtn.TabIndex = 16;
-            ModuleBtn.Text = "%";
-            ModuleBtn.UseVisualStyleBackColor = true;
-            ModuleBtn.Click += ModuleBtn_Click;
+            DelBtn.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            DelBtn.Location = new Point(13, 253);
+            DelBtn.Name = "DelBtn";
+            DelBtn.Size = new Size(63, 55);
+            DelBtn.TabIndex = 10;
+            DelBtn.Text = "Del";
+            DelBtn.UseVisualStyleBackColor = true;
+            DelBtn.Click += DelBtn_Click;
             // 
             // MultiplyBtn
             // 
@@ -237,16 +225,16 @@
             ClearBtn.UseVisualStyleBackColor = true;
             ClearBtn.Click += ClearBtn_Click;
             // 
-            // PlusMinusBtn
+            // EqualBtn
             // 
-            PlusMinusBtn.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            PlusMinusBtn.Location = new Point(249, 253);
-            PlusMinusBtn.Name = "PlusMinusBtn";
-            PlusMinusBtn.Size = new Size(63, 55);
-            PlusMinusBtn.TabIndex = 20;
-            PlusMinusBtn.Text = "-/+";
-            PlusMinusBtn.UseVisualStyleBackColor = true;
-            PlusMinusBtn.Click += PlusMinusBtn_Click;
+            EqualBtn.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            EqualBtn.Location = new Point(249, 253);
+            EqualBtn.Name = "EqualBtn";
+            EqualBtn.Size = new Size(132, 55);
+            EqualBtn.TabIndex = 20;
+            EqualBtn.Text = "=";
+            EqualBtn.UseVisualStyleBackColor = true;
+            EqualBtn.Click += EqualBtn_Click;
             // 
             // DevideBtn
             // 
@@ -275,16 +263,15 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(393, 331);
-            Controls.Add(PlusMinusBtn);
+            Controls.Add(EqualBtn);
             Controls.Add(DevideBtn);
             Controls.Add(MinusBtn);
-            Controls.Add(ModuleBtn);
             Controls.Add(MultiplyBtn);
             Controls.Add(PlusBtn);
             Controls.Add(ClearBtn);
-            Controls.Add(EqualBtn);
             Controls.Add(DotBtn);
-            Controls.Add(btn0);
+            Controls.Add(Btn0);
+            Controls.Add(DelBtn);
             Controls.Add(btn9);
             Controls.Add(btn8);
             Controls.Add(btn7);
@@ -313,14 +300,13 @@
         private Button btn9;
         private Button btn8;
         private Button btn7;
-        private Button EqualBtn;
         private Button DotBtn;
-        private Button btn0;
-        private Button ModuleBtn;
+        private Button Btn0;
+        private Button DelBtn;
         private Button MultiplyBtn;
         private Button PlusBtn;
         private Button ClearBtn;
-        private Button PlusMinusBtn;
+        private Button EqualBtn;
         private Button DevideBtn;
         private Button MinusBtn;
     }
